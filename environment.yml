@@ -1,0 +1,13 @@
+name: ml_startup_regression
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy>=1.25.0
+  - pandas>=2.1.0
+  - matplotlib>=3.8.0
+  - scikit-learn>=1.3.0
+  - jupyter>=1.0.0
+  - pip
+  - pip:
+      - seaborn>=0.12.2   # optional
