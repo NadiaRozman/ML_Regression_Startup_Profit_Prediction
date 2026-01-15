@@ -109,7 +109,7 @@ This dataset is synthetic and educational, intended purely for supervised learni
 
 4. **Open and run the notebook**
 
-   * Navigate to `notebooks/Startup_Profit_Regression_ML.ipynb`
+   * Navigate to `notebook/Startup_Profit_Regression_ML.ipynb`
    * Ensure `startup_profit_dataset.csv` is in the correct directory
    * Run all cells to reproduce the analysis
 
