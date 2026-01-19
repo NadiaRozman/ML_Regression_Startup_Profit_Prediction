@@ -9,15 +9,15 @@
 
 ## 📌 Project Overview
 
-This project applies and compares multiple **machine learning regression algorithms** to predict **startup profitability** based on investment allocation across core business functions.
+This project applies and compares multiple **machine learning regression models** to predict **startup profitability** based on how investments are allocated across key business functions.
 
-Inspired by my [Drug Classification ML project](https://github.com/NadiaRozman/ML_Classification_Drug_Prediction), this notebook focuses on:
+The project emphasizes:
 
-- Systematic **model comparison**
-- Clear **code justification**
-- Translating model outputs into **business insights**
+- Systematic **comparison of model performance**
+- Transparent and well-reasoned **model and code justification**
+- Translation of technical results into **actionable business insights**
 
-> **Objective:** Predict startup profit and identify which machine learning models perform best for continuous business forecasting tasks.
+> **Objective:** To forecast startup profits and determine which regression models are most effective for continuous business prediction tasks.
 
 ---
 
@@ -128,39 +128,39 @@ This project implements and compares **4 regression algorithms**:
 
 ## 📈 Project Workflow & Analysis
 
-### 1. **Data Loading & Exploration**
+### **1. Data Loading & Exploration**
 
 * Load dataset using Pandas
 * Explore data structure with `.head()`, `.info()`, and `.describe()`
 * Dataset contains 50 startups with 5 columns, no missing values
 
-### 2. **Feature Selection & Target Definition**
+### **2. Feature Selection & Target Definition**
 
 * Selected first 3 columns (R&D, Administration, Marketing) as features
 * Excluded State (categorical)
 * Target variable: Profit (continuous)
 
-### 3. **Train-Test Split**
+### **3. Train-Test Split**
 
 * Split ratio: 80% training, 20% testing
 * Random state = 0 for reproducibility
 * Training set: 40 samples; Test set: 10 samples
 
-### 4. Feature Scaling
+### **4. Feature Scaling**
 
 * **StandardScaler** applied to features (X) and target (y)  
 * Critical for SVR; optional for tree-based models  
 * Fitted on training data only to prevent leakage  
 * Separate scalers for features and target allow inverse transformation
 
-### 5. **Model Training & Evaluation**
+### **5. Model Training & Evaluation**
 
 * Each model trained on scaled training data
 * Predictions inversely transformed to original scale
 * Helper function `evaluate_model()` ensures consistent evaluation
 * **Metrics**: R², RMSE, MAE
 
-### 6. **Test Set Performance Summary**
+### **6. Test Set Performance Summary**
 
 | Model | R² Score | RMSE | MAE |
 |-------|----------|------|-----|
